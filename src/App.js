@@ -1,13 +1,30 @@
 import "./App.css";
+import Menu from "./Menu";
+
+//import logo from "./logo.png";
+//import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <div className="container">
+        <header>
+          <Menu />
+        </header>
+        {/* <img src="." alt="maimimg" />; */}
+      </div>
+      <main>
+        {" "}
+        <span className="App-header">Психолог</span>
+        <span className="title">🤍</span>
+      </main>
+      <footer>
+        Coded by K.S 🤍 and is
+        <a href="https://github.com/KaterynaKviten" target="blank">
+          {" "}
+          open-sourced on GitHub
+        </a>
+      </footer>
     </div>
   );
 }
