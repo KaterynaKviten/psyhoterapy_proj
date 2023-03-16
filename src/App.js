@@ -14,6 +14,15 @@ function App() {
         </header>
         <img src={lightTree} alt="maimimg" />;
       </div>
+      <div
+        style={{
+          backgroundImage: `url(${lightTree})`,
+          backgroundRepeat: "no-repeat",
+          width: "250px",
+        }}
+      >
+        Hello World
+      </div>
       <main>
         {" "}
         <span className="App-header">Психолог</span>
