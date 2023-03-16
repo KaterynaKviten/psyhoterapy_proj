@@ -12,21 +12,22 @@ function App() {
         <header>
           <Menu />
         </header>
-        <img src={lightTree} alt="maimimg" />;
+        {/* <img src={lightTree} alt="maimimg" />; */}
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${lightTree})`,
-          backgroundRepeat: "no-repeat",
-          width: "250px",
-        }}
-      >
-        Hello World
-      </div>
+
       <main>
-        {" "}
-        <span className="App-header">Психолог</span>
-        <span className="title">🤍</span>
+        <div
+          style={{
+            backgroundImage: `url(${lightTree})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            height: "500px",
+            color: "bisque",
+          }}
+        >
+          <span> Психолог</span>
+          <span className="title">🤍</span>
+        </div>
       </main>
       <footer>
         Coded by K.S 🤍 and is
