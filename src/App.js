@@ -1,5 +1,6 @@
 import "./App.css";
 import Menu from "./Menu";
+import lightTree from "./lightTree.jpg";
 
 //import logo from "./logo.png";
 //import Dictionary from "./Dictionary";
@@ -11,7 +12,7 @@ function App() {
         <header>
           <Menu />
         </header>
-        {/* <img src="." alt="maimimg" />; */}
+        <img src={lightTree} alt="maimimg" />;
       </div>
       <main>
         {" "}
