@@ -1,8 +1,8 @@
 import "./App.css";
 import Menu from "./Menu";
-import lightTree from "./lightTree.jpg";
+// import lightTree from "./lightTree.jpg";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { blue } from "@mui/material/colors";
+import Content from "./Content";
 
 const theme = createTheme({
   palette: {
@@ -29,7 +29,7 @@ function App() {
       </div>
 
       <main>
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${lightTree})`,
             backgroundSize: "contain",
@@ -40,7 +40,8 @@ function App() {
         >
           <span> Психолог</span>
           <span className="title">🤍</span>
-        </div>
+        </div> */}
+        <Content />
       </main>
       <footer>
         Coded by K.S 🤍 and is
