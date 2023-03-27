@@ -16,10 +16,20 @@ export default function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item sm={8}>
+        <Grid item marginLeft={2} sm={8}>
           <Item>
-            <h2>Психолог Оксана</h2>
-            <p>
+            <h2
+              style={{
+                backgroundColor: "#bacbeb",
+              }}
+            >
+              Психолог Оксана
+            </h2>
+            <p
+              style={{
+                backgroundColor: "#bacbeb",
+              }}
+            >
               orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
