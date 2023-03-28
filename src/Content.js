@@ -41,6 +41,7 @@ export default function BasicGrid() {
               alt="psihologist"
               style={{
                 width: "90%",
+                borderRadius: "3px",
               }}
             ></img>
           </Item>

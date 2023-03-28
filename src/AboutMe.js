@@ -56,6 +56,7 @@ export default function BasicGrid() {
               alt="myphoto"
               style={{
                 width: "90%",
+                borderRadius: "3px",
               }}
             ></img>
           </Item>
