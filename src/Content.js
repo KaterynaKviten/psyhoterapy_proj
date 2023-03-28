@@ -5,18 +5,19 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.mode === "light" ? "#f2f2f2" : "#fff",
   ...theme.typography.body2,
-  padding: "normal",
+  padding: "30px 10px 30px 10px ",
+  margin: "30px 10px 10px 10px ",
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
 
 export default function BasicGrid() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item marginLeft={2} sm={8}>
+    <Box>
+      <Grid container spacing={2} justifyContent="center">
+        <Grid item sm={6} alignItems="center">
           <Item>
             <h2
               style={{
@@ -25,11 +26,7 @@ export default function BasicGrid() {
             >
               Психолог Оксана
             </h2>
-            <p
-              style={{
-                backgroundColor: "#bacbeb",
-              }}
-            >
+            <p>
               orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -40,7 +37,8 @@ export default function BasicGrid() {
             </p>
           </Item>
         </Grid>
-        <Grid item mt={2} sm={4}>
+
+        <Grid item sm={4}>
           <Item>
             <img
               src="./women.jpg"
