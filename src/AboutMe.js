@@ -17,12 +17,17 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicGrid() {
   return (
     <Box>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid
+        container
+        spacing={2}
+        justifyContent="center"
+        direction="row-reverse"
+      >
         <Grid item sm={6} alignItems="center">
           <Item>
-            <h1>Психолог Оксана</h1>
+            <h1>Про мене</h1>
             <p>
-              orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -30,6 +35,16 @@ export default function BasicGrid() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </li>
+              <li> Excepteur sint occaecat</li>
+              <li>Ut enim ad minim veniam</li>
+              <li>Excepteur sint</li>
+              <li>Lorem ipsum</li>
+            </ul>
             <ButtonContact />
           </Item>
         </Grid>
@@ -37,8 +52,8 @@ export default function BasicGrid() {
         <Grid item sm={4}>
           <Item>
             <img
-              src="./psihologist.jpg"
-              alt="psihologist"
+              src="./women.jpg"
+              alt="myphoto"
               style={{
                 width: "90%",
               }}
