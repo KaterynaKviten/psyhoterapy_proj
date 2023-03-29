@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 export default function BasicButtons() {
   return (
     <Stack spacing={2} direction="row" display="block">
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" sx={{ color: "white" }}>
         Записатися
       </Button>
     </Stack>

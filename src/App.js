@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Content from "./Content";
 import AboutMe from "./AboutMe";
+import Service from "./Service";
 // import { Button } from "@mui/material";
 
 const theme = createTheme({
@@ -38,6 +39,7 @@ function App() {
           <main>
             <Content />
             <AboutMe />
+            <Service />
           </main>
         </div>
 
