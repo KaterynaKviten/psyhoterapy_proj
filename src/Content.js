@@ -31,6 +31,17 @@ export default function BasicGrid() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <ButtonContact />
+            <img
+              src="./support.png"
+              alt="ShowingSupport"
+              style={{
+                width: "80px",
+                display: "grid",
+                position: "relative",
+                top: "17px",
+                left: "22px",
+              }}
+            ></img>
           </Item>
         </Grid>
 
