@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import TextField from "./TextField";
 
 const style = {
   position: "absolute",
@@ -11,8 +12,10 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "1px solid #616161",
   boxShadow: 24,
+  borderRadius: "10px",
+  opacity: "0.9",
   p: 4,
 };
 
@@ -23,7 +26,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Записатися</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -32,11 +35,12 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Записатись на консультацію
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <TextField />
+          {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          </Typography> */}
         </Box>
       </Modal>
     </div>

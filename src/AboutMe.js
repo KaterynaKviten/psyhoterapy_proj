@@ -3,7 +3,8 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import ButtonContact from "./ButtonContact";
+// import ButtonContact from "./ButtonContact";
+import ModalContact from "./ModalContact";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "light" ? "#f2f2f2" : "#fff",
@@ -45,7 +46,7 @@ export default function BasicGrid() {
               <li>Excepteur sint</li>
               <li>Lorem ipsum</li>
             </ul>
-            <ButtonContact />
+            <ModalContact />
           </Item>
         </Grid>
 

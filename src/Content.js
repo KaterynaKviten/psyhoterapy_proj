@@ -3,7 +3,8 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import ButtonContact from "./ButtonContact";
+// import ButtonContact from "./ButtonContact";
+import ModalContact from "./ModalContact";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "light" ? "#f2f2f2" : "#fff",
@@ -30,7 +31,7 @@ export default function BasicGrid() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <ButtonContact />
+            <ModalContact />
             <img
               src="./support.png"
               alt="ShowingSupport"
