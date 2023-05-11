@@ -15,7 +15,6 @@ const style = {
   border: "1px solid #616161",
   boxShadow: 24,
   borderRadius: "10px",
-  opacity: "0.9",
   p: 4,
 };
 
