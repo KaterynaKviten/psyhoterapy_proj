@@ -88,9 +88,10 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Button
+                component="a"
                 variant="outlined"
                 key={page}
-                onClick={handleCloseNavMenu}
+                href="#contactPage"
                 sx={{
                   my: 2,
                   color: "white",

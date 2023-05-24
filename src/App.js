@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Content from "./Content";
 import AboutMe from "./AboutMe";
 import Service from "./Service";
+import Contact from "./Contact";
 // import { Button } from "@mui/material";
 
 const theme = createTheme({
@@ -40,6 +41,7 @@ function App() {
             <Content />
             <AboutMe />
             <Service />
+            <Contact />
           </main>
         </div>
 
