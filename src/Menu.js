@@ -96,6 +96,7 @@ function ResponsiveAppBar() {
                   color: "white",
                   display: "block",
                   borderColor: "white",
+                  marginLeft: "15px",
                 }}
               >
                 {page}
