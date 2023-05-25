@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
-    <Box>
+    <Box id="contentPage">
       <Grid container spacing={2} justifyContent="center">
         <Grid item sm={6} alignItems="center">
           <Item>
