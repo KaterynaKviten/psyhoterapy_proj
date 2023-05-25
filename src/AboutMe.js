@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
-    <Box>
+    <Box id="aboutmePage">
       <Grid
         container
         spacing={2}

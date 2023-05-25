@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Про мене", "Послуги", "Контакти"];
+// const pages = ["Про мене", "Послуги", "Контакти"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Logotyp(props) {
   return <img src="./logotyp.png" alt="logotyp"></img>;
@@ -71,13 +71,7 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            ></Menu>
           </Box>
 
           <Box
@@ -86,23 +80,50 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            {pages.map((page) => (
-              <Button
-                component="a"
-                variant="outlined"
-                key={page}
-                href="#contactPage"
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  borderColor: "white",
-                  marginLeft: "15px",
-                }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button
+              component="a"
+              variant="outlined"
+              href="#aboutmePage"
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                borderColor: "white",
+                marginLeft: "15px",
+              }}
+            >
+              Про мене
+            </Button>
+
+            <Button
+              component="a"
+              variant="outlined"
+              href="#servisePage"
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                borderColor: "white",
+                marginLeft: "15px",
+              }}
+            >
+              Послуги
+            </Button>
+
+            <Button
+              component="a"
+              variant="outlined"
+              href="#contactPage"
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                borderColor: "white",
+                marginLeft: "15px",
+              }}
+            >
+              Контакти
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -138,3 +159,6 @@ function ResponsiveAppBar() {
   );
 }
 export default ResponsiveAppBar;
+
+// servisePage;
+// aboutmePage;
