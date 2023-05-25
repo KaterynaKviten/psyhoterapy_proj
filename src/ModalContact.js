@@ -45,7 +45,12 @@ export default function BasicModal() {
             </Grid>
           </Grid>
 
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+            color="#616161"
+          >
             Записатись на консультацію
           </Typography>
 
@@ -53,6 +58,16 @@ export default function BasicModal() {
           {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography> */}
+          <img
+            src="./girl with letter.png"
+            alt="Contacts"
+            style={{
+              width: "25%",
+              position: "absolute",
+              left: "280px",
+              bottom: "30px",
+            }}
+          ></img>
         </Box>
       </Modal>
     </div>
