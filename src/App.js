@@ -5,6 +5,8 @@ import Content from "./Content";
 import AboutMe from "./AboutMe";
 import Service from "./Service";
 import Contact from "./Contact";
+import Fab from "@mui/material/Fab";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 // import { Button } from "@mui/material";
 
 const theme = createTheme({
@@ -27,6 +29,7 @@ function App() {
             <Menu color="primary" />
           </header>
         </div>
+
         <div
           className="cont"
           style={{
@@ -44,7 +47,19 @@ function App() {
             <Contact />
           </main>
         </div>
-
+        <Fab
+          variant="circular"
+          aria-label="Scroll to top"
+          sx={{
+            position: "fixed",
+          }}
+        >
+          <ArrowUpwardIcon
+            sx={{
+              color: "#51a5b4",
+            }}
+          />
+        </Fab>
         <footer>
           Coded by K.S 🤍 and is
           <a href="https://github.com/KaterynaKviten" target="blank">
