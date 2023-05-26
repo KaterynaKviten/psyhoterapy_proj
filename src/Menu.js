@@ -13,7 +13,9 @@ import MenuItem from "@mui/material/MenuItem";
 // const pages = ["Про мене", "Послуги", "Контакти"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Logotyp(props) {
-  return <img src="./logotyp.png" alt="logotyp"></img>;
+  return (
+    <img src="./logo for psihoter proj.png" alt="logotyp" width="60px"></img>
+  );
 }
 
 function ResponsiveAppBar() {
