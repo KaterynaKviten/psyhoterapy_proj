@@ -34,7 +34,7 @@ function App() {
         <div
           className="cont"
           style={{
-            width: "90%",
+            width: "80%",
             margin: "30px 10px 10px 10px ",
             display: "inline-flex",
             backgroundColor: "#d9d9d9",

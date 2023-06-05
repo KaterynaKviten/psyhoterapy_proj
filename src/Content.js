@@ -2,6 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+
 // import Grid from "@mui/material/Grid";
 // import ButtonContact from "./ButtonContact";
 import ModalContact from "./ModalContact";
@@ -19,16 +20,16 @@ export default function BasicGrid() {
   return (
     <Box
       id="contentPage"
-      class="container"
       sx={{
         display: "flex",
         flexDirection: "row",
-        flexGrow: 1,
+        justifyContent: "space-evenly",
+
         alignContent: "stretch",
       }}
     >
       <Item>
-        <h1>Психолог Оксана</h1>
+        <h1 style={{ marginTop: 0 }}>Психолог Оксана</h1>
         <p>
           orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -52,12 +53,16 @@ export default function BasicGrid() {
         ></img>
       </Item>
 
-      <Item>
+      <Item
+        sx={{
+          width: "fit-content",
+        }}
+      >
         <img
           src="./psihologist.jpg"
           alt="psihologist"
           style={{
-            width: "50%",
+            width: "300px",
             borderRadius: "3px",
           }}
         ></img>
