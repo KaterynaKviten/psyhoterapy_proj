@@ -9,7 +9,7 @@ import ModalContact from "./ModalContact";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "light" ? "#f2f2f2" : "#fff",
   ...theme.typography.body2,
-  padding: "30px 10px 30px 10px ",
+  padding: "10px 10px 30px 10px ",
   margin: "30px 10px 10px 10px ",
   textAlign: "center",
   color: theme.palette.text.secondary,
@@ -20,7 +20,7 @@ export default function BasicGrid() {
     <Box id="aboutmePage">
       <Grid
         container
-        spacing={2}
+        spacing={1}
         justifyContent="center"
         direction="row-reverse"
       >
@@ -50,13 +50,13 @@ export default function BasicGrid() {
           </Item>
         </Grid>
 
-        <Grid item sm={4}>
+        <Grid item sm={6}>
           <Item>
             <img
               src="./women.jpg"
               alt="myphoto"
               style={{
-                width: "90%",
+                width: "50%",
                 borderRadius: "3px",
               }}
             ></img>

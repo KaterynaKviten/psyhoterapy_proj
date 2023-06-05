@@ -161,6 +161,3 @@ function ResponsiveAppBar() {
   );
 }
 export default ResponsiveAppBar;
-
-// servisePage;
-// aboutmePage;

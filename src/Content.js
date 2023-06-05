@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+// import Grid from "@mui/material/Grid";
 // import ButtonContact from "./ButtonContact";
 import ModalContact from "./ModalContact";
 
@@ -17,48 +17,51 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
-    <Box id="contentPage">
-      <Grid container spacing={2} justifyContent="center">
-        <Grid item sm={6} alignItems="center">
-          <Item>
-            <h1>Психолог Оксана</h1>
-            <p>
-              orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <ModalContact />
-            <img
-              src="./support.png"
-              alt="ShowingSupport"
-              style={{
-                width: "80px",
-                display: "grid",
-                position: "relative",
-                top: "17px",
-                left: "22px",
-              }}
-            ></img>
-          </Item>
-        </Grid>
+    <Box
+      id="contentPage"
+      class="container"
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        flexGrow: 1,
+        alignContent: "stretch",
+      }}
+    >
+      <Item>
+        <h1>Психолог Оксана</h1>
+        <p>
+          orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+        <ModalContact />
+        <img
+          src="./support.png"
+          alt="ShowingSupport"
+          style={{
+            width: "80px",
+            display: "grid",
+            position: "relative",
+            top: "17px",
+            left: "22px",
+          }}
+        ></img>
+      </Item>
 
-        <Grid item sm={4}>
-          <Item>
-            <img
-              src="./psihologist.jpg"
-              alt="psihologist"
-              style={{
-                width: "90%",
-                borderRadius: "3px",
-              }}
-            ></img>
-          </Item>
-        </Grid>
-      </Grid>
+      <Item>
+        <img
+          src="./psihologist.jpg"
+          alt="psihologist"
+          style={{
+            width: "50%",
+            borderRadius: "3px",
+          }}
+        ></img>
+      </Item>
     </Box>
   );
 }
