@@ -24,11 +24,16 @@ export default function BasicGrid() {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-evenly",
-
+        flexWrap: "wrap",
         alignContent: "stretch",
       }}
     >
-      <Item>
+      <Item
+        sx={{
+          Width: "300px",
+          flex: 1,
+        }}
+      >
         <h1 style={{ marginTop: 0 }}>Психолог Оксана</h1>
         <p>
           orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
