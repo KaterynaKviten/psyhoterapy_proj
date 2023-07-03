@@ -9,8 +9,6 @@ import Contact from "./Contact";
 import Fab from "@mui/material/Fab";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-// import { Button } from "@mui/material";
-
 const theme = createTheme({
   palette: {
     primary: {

@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar id="topMenu" position="static">
+    <AppBar id="topMenu">
       <Container maxWidth="xl" sx={{ width: "80%" }}>
         <Toolbar disableGutters>
           <Logotyp />
