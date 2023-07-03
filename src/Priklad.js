@@ -7,19 +7,14 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
+import AdbIcon from "@mui/icons-material/Adb";
 
+const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
-function Logotyp(props) {
-  return (
-    <img src="./logo for psihoter proj.png" alt="logotyp" width="60px"></img>
-  );
-}
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,6 +22,9 @@ function ResponsiveAppBar() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
@@ -38,17 +36,29 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar id="topMenu" position="static">
-      <Container maxWidth="xl" sx={{ width: "80%" }}>
+    <AppBar position="static">
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Logotyp />
-
-          <Box
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
             sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
+            LOGO
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -77,85 +87,50 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <List
-                  sx={{
-                    color: "#51a5b4",
-                    display: "block",
-                    borderColor: "white",
-                  }}
-                >
-                  <ListItemButton component="a" href="#aboutmePage">
-                    <ListItemText primary="Про мене" />
-                  </ListItemButton>
-                  <ListItemButton component="a" href="#servisePage">
-                    <ListItemText primary="Послуги" />
-                  </ListItemButton>
-                  <ListItemButton component="a" href="#contactPage">
-                    <ListItemText primary=" Контакти" />
-                  </ListItemButton>
-                </List>
-              </MenuItem>
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
-
-          <Box
+          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
             sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-            <Button
-              component="a"
-              variant="outlined"
-              href="#aboutmePage"
-              sx={{
-                my: 2,
-                color: "white",
-                display: "block",
-                borderColor: "white",
-                marginLeft: "15px",
-              }}
-            >
-              Про мене
-            </Button>
-
-            <Button
-              component="a"
-              variant="outlined"
-              href="#servisePage"
-              sx={{
-                my: 2,
-                color: "white",
-                display: "block",
-                borderColor: "white",
-                marginLeft: "15px",
-              }}
-            >
-              Послуги
-            </Button>
-
-            <Button
-              component="a"
-              variant="outlined"
-              href="#contactPage"
-              sx={{
-                my: 2,
-                color: "white",
-                display: "block",
-                borderColor: "white",
-                marginLeft: "15px",
-              }}
-            >
-              Контакти
-            </Button>
+            LOGO
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                {page}
+              </Button>
+            ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <span className="tel" style={{ color: "#fff", display: "block" }}>
-              +8050 770 07 77
-            </span>
-
+            <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              </IconButton>
+            </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
