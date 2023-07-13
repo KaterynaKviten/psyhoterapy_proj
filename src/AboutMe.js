@@ -30,7 +30,7 @@ export default function BasicGrid() {
     >
       <Item
         sx={{
-          Width: "300px",
+          width: "300px",
           flex: 1,
         }}
       >

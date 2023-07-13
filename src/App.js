@@ -33,8 +33,8 @@ function App() {
         <div
           className="cont"
           style={{
-            maxWidth: "30%",
-            minWidth: "80%",
+            maxWidth: "80%",
+            minWidth: "350px",
             margin: "30px 10px 10px 10px ",
             display: "inline-flex",
             backgroundColor: "#d9d9d9",
@@ -52,8 +52,9 @@ function App() {
             <Contact />
           </main>
           <Fab
-            component="a"
-            href="#topMenu"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             variant="circular"
             aria-label="Scroll to top"
             size="small"
